@@ -1,4 +1,4 @@
-package com.packet.cardatabase.web;
+package com.packt.cardatabase.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +14,7 @@ public class CarController {
 	
 	@RequestMapping("/cars")
 	public Iterable<Car> getCars(){
+		//자동차를 검색하고 반환
 		return repository.findAll();
 	}
 
